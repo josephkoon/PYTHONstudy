@@ -1,0 +1,123 @@
+p {
+	background: orange;
+	font-size: 24px;
+	}
+	
+p {
+	background : green;
+	}
+	
+	
+	
+/* 
+ID SELECTOR > CLASS > TYPE
+type selector 0-0-1
+class selector 0-1-0
+ID selector 1-0-0
+*/
+
+
+
+<p id="food"> .... </p>
+
+
+ID SELECTOR TAKES PRECEDENT OVER PARAGRAPH TYPE
+#food {
+	background:green;
+	}
+	
+	
+p {
+	background:orange;
+	}
+	
+	
+	
+	
+<div class="hotdog">
+	<p> ... </p>
+	<p> ... </p>
+	<p class="mustard"> ... </p>
+</div>
+
+
+CLASS SELECT HOTDOG. SPECIFY IT AS BROWN, ADD MUSTARD AS YELLOW
+.hotdog p{ THIS HAS A CLASS AND TYPE SELECTOR. 0-1-1
+	background : brown;
+	}
+	
+.hotdog p.mustard{  THIS HAS TWO CLASS AND ONE TYPE SELECTOR 0-2-1
+	background:yellow;
+	}
+	
+	
+COMBINED SPECIFICITY SELECTORS
+
+
+
+
+MULTIPLE CLASS NAMES FOR MODULARITY
+<a class="btn btn-danger">...</a>
+<a class="btn btn-success">...</a>
+
+
+.btn {
+	font-size : 16px;
+}
+
+.btn-danger {
+	background:red;
+}
+	
+
+CSS PROPERTY VALUES
+
+
+
+MAKE THE PARAGRAPHS BLOCK ELEMENTS
+p {
+	display : block;
+}
+
+MAKE THE PARAGRAPHS INLINE ELEMENTS
+p {
+	display : inline;
+}
+
+MAKE PARAGRPH BEHAVE AS BLOCK BUT BE DISPLAYED AS INLINE
+p {
+	display : inline-block;
+}
+
+
+HIDE ALL DIV ELEMENTS
+div {
+	display : none;
+}
+
+
+EVERY ELEMENT IS A BOX
+diaply, width, height, padding, border, margin
+
+div {
+	border : 6px solid #949599;
+	height: 100px;
+	margin: 20px;
+	padding: 20px;
+	width: 400px;
+}
+
+TOTAL WIDTH = margin-right+border-right + padding-right + width + height
+
+margin is outer layer
+border is next layer
+padding is next layer
+
+
+div {
+	width : 400px;
+	height: 100px;
+	margin : 20px; SPACE AROUND ELEMENT FOR BLOCK AND INLINE BLOCK
+	padding: 20px: SPACE WITHIN AN ELEMENT
+}
+
